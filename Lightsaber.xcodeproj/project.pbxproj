@@ -3,19 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD79BF50231E58D100408874 /* you-were-the-chosen-one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF48231E58D100408874 /* you-were-the-chosen-one.mp3 */; };
+		DD79BF51231E58D100408874 /* ill-never-join-you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF49231E58D100408874 /* ill-never-join-you.mp3 */; };
+		DD79BF52231E58D100408874 /* BB8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF4A231E58D100408874 /* BB8.mp3 */; };
+		DD79BF53231E58D100408874 /* lightsaber-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF4B231E58D100408874 /* lightsaber-sound.mp3 */; };
+		DD79BF54231E58D100408874 /* star-wars-main-theme-full.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF4C231E58D100408874 /* star-wars-main-theme-full.mp3 */; };
+		DD79BF55231E58D100408874 /* d2-star-wars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF4D231E58D100408874 /* d2-star-wars.mp3 */; };
+		DD79BF56231E58D100408874 /* the-force-awakens-kylo-ren-freakout-anger-scene.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF4E231E58D100408874 /* the-force-awakens-kylo-ren-freakout-anger-scene.mp3 */; };
+		DD79BF57231E58D100408874 /* you-dont-know-the-power-of-the-dark-side.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD79BF4F231E58D100408874 /* you-dont-know-the-power-of-the-dark-side.mp3 */; };
 		DDE8E0912272B27A00874599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8E0902272B27A00874599 /* AppDelegate.swift */; };
 		DDE8E0932272B27A00874599 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8E0922272B27A00874599 /* ViewController.swift */; };
 		DDE8E0962272B27A00874599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E0942272B27A00874599 /* Main.storyboard */; };
 		DDE8E0982272B27D00874599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E0972272B27D00874599 /* Assets.xcassets */; };
 		DDE8E09B2272B27D00874599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E0992272B27D00874599 /* LaunchScreen.storyboard */; };
-		DDE8E0A32272BA5C00874599 /* starwar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E0A22272BA5C00874599 /* starwar.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD79BF48231E58D100408874 /* you-were-the-chosen-one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "you-were-the-chosen-one.mp3"; sourceTree = "<group>"; };
+		DD79BF49231E58D100408874 /* ill-never-join-you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ill-never-join-you.mp3"; sourceTree = "<group>"; };
+		DD79BF4A231E58D100408874 /* BB8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BB8.mp3; sourceTree = "<group>"; };
+		DD79BF4B231E58D100408874 /* lightsaber-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lightsaber-sound.mp3"; sourceTree = "<group>"; };
+		DD79BF4C231E58D100408874 /* star-wars-main-theme-full.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "star-wars-main-theme-full.mp3"; sourceTree = "<group>"; };
+		DD79BF4D231E58D100408874 /* d2-star-wars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "d2-star-wars.mp3"; sourceTree = "<group>"; };
+		DD79BF4E231E58D100408874 /* the-force-awakens-kylo-ren-freakout-anger-scene.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "the-force-awakens-kylo-ren-freakout-anger-scene.mp3"; sourceTree = "<group>"; };
+		DD79BF4F231E58D100408874 /* you-dont-know-the-power-of-the-dark-side.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "you-dont-know-the-power-of-the-dark-side.mp3"; sourceTree = "<group>"; };
 		DDE8E08D2272B27A00874599 /* Lightsaber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lightsaber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE8E0902272B27A00874599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE8E0922272B27A00874599 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +38,6 @@
 		DDE8E0972272B27D00874599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE8E09A2272B27D00874599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDE8E09C2272B27D00874599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDE8E0A22272BA5C00874599 /* starwar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = starwar.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +70,14 @@
 		DDE8E08F2272B27A00874599 /* Lightsaber */ = {
 			isa = PBXGroup;
 			children = (
-				DDE8E0A22272BA5C00874599 /* starwar.mp4 */,
+				DD79BF4A231E58D100408874 /* BB8.mp3 */,
+				DD79BF4D231E58D100408874 /* d2-star-wars.mp3 */,
+				DD79BF49231E58D100408874 /* ill-never-join-you.mp3 */,
+				DD79BF4B231E58D100408874 /* lightsaber-sound.mp3 */,
+				DD79BF4C231E58D100408874 /* star-wars-main-theme-full.mp3 */,
+				DD79BF4E231E58D100408874 /* the-force-awakens-kylo-ren-freakout-anger-scene.mp3 */,
+				DD79BF4F231E58D100408874 /* you-dont-know-the-power-of-the-dark-side.mp3 */,
+				DD79BF48231E58D100408874 /* you-were-the-chosen-one.mp3 */,
 				DDE8E0902272B27A00874599 /* AppDelegate.swift */,
 				DDE8E0922272B27A00874599 /* ViewController.swift */,
 				DDE8E0942272B27A00874599 /* Main.storyboard */,
@@ -99,11 +120,12 @@
 				TargetAttributes = {
 					DDE8E08C2272B27A00874599 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
 			buildConfigurationList = DDE8E0882272B27A00874599 /* Build configuration list for PBXProject "Lightsaber" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,9 +147,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD79BF50231E58D100408874 /* you-were-the-chosen-one.mp3 in Resources */,
+				DD79BF54231E58D100408874 /* star-wars-main-theme-full.mp3 in Resources */,
+				DD79BF53231E58D100408874 /* lightsaber-sound.mp3 in Resources */,
+				DD79BF51231E58D100408874 /* ill-never-join-you.mp3 in Resources */,
+				DD79BF57231E58D100408874 /* you-dont-know-the-power-of-the-dark-side.mp3 in Resources */,
 				DDE8E09B2272B27D00874599 /* LaunchScreen.storyboard in Resources */,
+				DD79BF52231E58D100408874 /* BB8.mp3 in Resources */,
+				DD79BF55231E58D100408874 /* d2-star-wars.mp3 in Resources */,
 				DDE8E0982272B27D00874599 /* Assets.xcassets in Resources */,
-				DDE8E0A32272BA5C00874599 /* starwar.mp4 in Resources */,
+				DD79BF56231E58D100408874 /* the-force-awakens-kylo-ren-freakout-anger-scene.mp3 in Resources */,
 				DDE8E0962272B27A00874599 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmb728.Lightsaber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,7 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmb728.Lightsaber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
