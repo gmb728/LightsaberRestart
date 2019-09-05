@@ -53,14 +53,7 @@ class ViewController: UIViewController {
     //點空白處鍵盤消失
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-        if let url = Bundle.main.url(forResource: "star-wars-main-theme-full", withExtension: "mp3"){
-            player = AVPlayer(url: url)
-            player?.play()
-        }
-        //galaxy screen animation
-        UIView.animate(withDuration: 17) {
-            self.episodeImageView.center = CGPoint(x:self.episodeImageView.center.x, y: 200)}
-        
+       
     }
        
     @IBAction func seriesSegAction(_ sender: Any) {
@@ -99,6 +92,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func sideSwithChanged(_ sender: UISwitch) {
+        
         if let url = Bundle.main.url(forResource: "BB8", withExtension: "mp3"){
             player = AVPlayer(url: url)
             player?.play()
@@ -112,6 +106,9 @@ class ViewController: UIViewController {
             sideLabel.textColor = .darkGray
            
         }
+        
+        
+        
     }
         
    
@@ -122,6 +119,7 @@ class ViewController: UIViewController {
      var count = Int(arc4random_uniform(6)+0)
     
     @IBAction func lightsaberButtonChanged(_ sender: UIButton) {
+        
         if let url = Bundle.main.url(forResource: "lightsaber-sound", withExtension: "mp3"){
             player = AVPlayer(url: url)
             player?.play()
@@ -130,29 +128,29 @@ class ViewController: UIViewController {
        lightsaberLabel.adjustsFontSizeToFitWidth=true
         
         count = count + 1
-        let colors = count % 7
+        let colors = count % 6
         
-       if colors == 1 {
+       if colors == 0 {
             lightsaberLabel.textColor = .red
-            lightsaberImageView.backgroundColor = .red
-        } else if colors == 2 {
+            lightsaberImageView.backgroundColor = UIColor(red: 255/255, green: 0, blue:0, alpha: CGFloat(forceSlider.value/10))
+        } else if colors == 1 {
             lightsaberLabel.textColor = .green
-            lightsaberImageView.backgroundColor = .green
-        } else if colors == 3 {
+           lightsaberImageView.backgroundColor = UIColor(red: 0, green: 255/255, blue:0, alpha: CGFloat(forceSlider.value/10))
+        } else if colors == 2 {
             lightsaberLabel.textColor = .blue
-            lightsaberImageView.backgroundColor = .blue
-        } else if colors == 4 {
+            lightsaberImageView.backgroundColor = UIColor(red: 0, green: 0, blue:255/255, alpha: CGFloat(forceSlider.value/10))
+        } else if colors == 3 {
             lightsaberLabel.textColor = .purple
-            lightsaberImageView.backgroundColor = .purple
-        } else if colors == 5 {
+            lightsaberImageView.backgroundColor = UIColor(red: 127/255, green: 0, blue:127/255, alpha: CGFloat(forceSlider.value/10))
+        } else if colors == 4 {
             lightsaberLabel.textColor = .yellow
             lightsaberImageView.backgroundColor = .yellow
-        } else if colors == 6 {
+        lightsaberImageView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue:0, alpha: CGFloat(forceSlider.value/10))
+        } else if colors == 5 {
           lightsaberLabel.textColor = .white
-          lightsaberImageView.backgroundColor = .white
-       } else if colors == 7 {
-        lightsaberLabel.textColor = .darkGray
-        lightsaberImageView.backgroundColor = .darkGray
+         lightsaberImageView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue:255/255, alpha: CGFloat(forceSlider.value/10))
+        
+      
     }
         
     }
@@ -173,7 +171,7 @@ class ViewController: UIViewController {
         
       resultView.isHidden = false
    
-        if episodeSeg.selectedSegmentIndex == 0 || episodeSeg.selectedSegmentIndex == 1 || episodeSeg.selectedSegmentIndex == 5 && sideSwitch.isOn == true{
+        if episodeSeg.selectedSegmentIndex == 0 || episodeSeg.selectedSegmentIndex == 1 || episodeSeg.selectedSegmentIndex == 2 && sideSwitch.isOn == true{
             jediImageView.image = UIImage(named: "Luke Skywalker")
             jediTextField.text = "Luke Skywalker"
        
@@ -182,7 +180,7 @@ class ViewController: UIViewController {
                 player?.play()
             }
             
-        } else if episodeSeg.selectedSegmentIndex == 0 || episodeSeg.selectedSegmentIndex == 1 || episodeSeg.selectedSegmentIndex == 5 && sideSwitch.isOn == false {
+        } else if episodeSeg.selectedSegmentIndex == 0 || episodeSeg.selectedSegmentIndex == 1 || episodeSeg.selectedSegmentIndex == 2 && sideSwitch.isOn == false {
             jediImageView.image = UIImage(named: "Darth Vader")
              jediTextField.text = "Darth Vader"
             if let url = Bundle.main.url(forResource: "you-dont-know-the-power-of-the-dark-side", withExtension: "mp3"){
@@ -191,7 +189,7 @@ class ViewController: UIViewController {
             }
             
             
-        } else if episodeSeg.selectedSegmentIndex == 2 || episodeSeg.selectedSegmentIndex == 3 || episodeSeg.selectedSegmentIndex == 4 && sideSwitch.isOn == true{
+        } else if episodeSeg.selectedSegmentIndex == 3 || episodeSeg.selectedSegmentIndex == 4 || episodeSeg.selectedSegmentIndex == 5 && sideSwitch.isOn == true{
             jediImageView.image = UIImage(named: "Obi-Wan Kenobi")
             jediTextField.text = "Obi-Wan Kenobi"
             if let url = Bundle.main.url(forResource: "you-were-the-chosen-one", withExtension: "mp3"){
@@ -201,7 +199,7 @@ class ViewController: UIViewController {
             
            
           
-        } else if episodeSeg.selectedSegmentIndex == 2 || episodeSeg.selectedSegmentIndex == 3 || episodeSeg.selectedSegmentIndex == 4 && sideSwitch.isOn == false {
+        } else if episodeSeg.selectedSegmentIndex == 3 || episodeSeg.selectedSegmentIndex == 4 || episodeSeg.selectedSegmentIndex == 5 && sideSwitch.isOn == false {
             jediImageView.image = UIImage(named: "Anakin Skywalker")
             jediTextField.text = "Anakin Skywalker"
             quoteLabel.text = "I don't like sand"
@@ -245,6 +243,13 @@ class ViewController: UIViewController {
          resultView.isHidden = true
          forceSlider.isContinuous = false
        
+        if let url = Bundle.main.url(forResource: "star-wars-main-theme-full", withExtension: "mp3"){
+            player = AVPlayer(url: url)
+            player?.play()
+        }
+        //galaxy screen animation
+        UIView.animate(withDuration: 17) {
+            self.episodeImageView.center = CGPoint(x:self.episodeImageView.center.x, y: 200)}
         
       
    

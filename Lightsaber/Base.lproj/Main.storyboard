@@ -34,10 +34,10 @@
                                         <segments>
                                             <segment title="III"/>
                                             <segment title="V"/>
+                                            <segment title="VI"/>
                                             <segment title="I"/>
                                             <segment title="II"/>
                                             <segment title="III"/>
-                                            <segment title="VI"/>
                                             <segment title="VII"/>
                                             <segment title="VIII"/>
                                         </segments>
@@ -129,17 +129,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaD-ec-A4m" userLabel="force Image View">
-                                        <rect key="frame" x="-21" y="50" width="417" height="523"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kth-g9-Crv">
                                         <rect key="frame" x="0.0" y="100" width="375" height="523"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MMW-Fz-kJg">
                                         <rect key="frame" x="0.0" y="100" width="375" height="523"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t05-43-sGT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t05-43-sGT">
                                         <rect key="frame" x="-1227" y="-338" width="0.0" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -193,7 +189,6 @@
                         <outlet property="episodeImageView" destination="Jzw-k1-Njy" id="oet-w8-F5A"/>
                         <outlet property="episodeLabel" destination="5dl-Wh-QBb" id="MIW-pY-pU2"/>
                         <outlet property="episodeSeg" destination="fqx-DF-SOX" id="MZ7-zj-7og"/>
-                        <outlet property="forceImageView" destination="qaD-ec-A4m" id="Eqf-tB-5pC"/>
                         <outlet property="forceLabel" destination="2bo-ui-mnR" id="CA3-MU-MKu"/>
                         <outlet property="forceSlider" destination="Xzw-PT-HVv" id="nQi-kj-PAg"/>
                         <outlet property="jediImageView" destination="MMW-Fz-kJg" id="Loo-Sx-LKO"/>
@@ -218,6 +213,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VGi-8N-glm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pzD-NW-YIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
